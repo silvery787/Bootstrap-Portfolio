@@ -47,11 +47,21 @@ h3 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+@keyframes anim_header {
+    from {background-color: #4aaaa6;}
+    to {background-color: #1178b2;}
+}
 a.top-menu {
 	color:#fff;
+    animation-name: anim_header;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
 }
+
 a.nav-link {
-	font-size: 
+	font-size: 20px;
 }
 .navbar {
 	padding: 0px;
