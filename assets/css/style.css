@@ -56,7 +56,7 @@ a.top-menu {
 	color:#fff;
     animation-name: anim_header;
     animation-duration: 3s;
-    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
@@ -123,7 +123,8 @@ aside {
 .portfolio_item_title {
     width: 280px;
     height: 50px;
-    background: #4aaaa5;
+    /*background: #4aaaa5;*/
+    background: rgba(74,170,165,0.7);
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #fff;
     position: relative;
@@ -132,9 +133,15 @@ aside {
     left: 0px;
     z-index: 2;
     text-align: center;
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 20px;
     padding-top: 4px;
     display: inline-block;
+}
+.portfolio_pic {
+    width: 280px;
+    height: 200px;
+    border: 1px solid #eef;
 }
 
 .bp_submit {
@@ -160,13 +167,19 @@ aside {
 @media screen and (min-width: 768px) and (max-width: 991px) {
      #profile_photo {
         width: 100%;
-    }    
-}
+    }
+/*    .portfolio_item_title {
+        size: 2.5vw;
+    }
+*/}
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) and (max-width: 767px) {
     #profile_photo {
         width: 100%;
+    }
+    .portfolio_item_title {
+        size: 2.5vw;
     }
 }
 
@@ -175,5 +188,9 @@ aside {
     #profile_photo {
         width: 100%;
     }
+    .portfolio_item_title {
+        size: 2.5vw;
+    }
+
 }
 
